@@ -4,9 +4,7 @@ UC1 focuses on adapting the Trans-European Transport Network (TEN-T) Corridor to
 
 By combining hazard impacts with adaptation options, UC1 will help prioritize strategic interventions, paving the way for a pilot network adaptation strategy. A key innovation within UC1 is its multi-modal approach to network flow allocation, which will be critical for capturing systemic failures at a pan-European scale. It will also explore how adaptation to one hazard could inadvertently alter the vulnerability of infrastructure to other climate risks, ensuring a holistic approach to resilience planning. 
 
-UC1 will collaborate with pan-European transport organizations such as PIANC, UNECE, and FEHRL, integrating findings into broader adaptation frameworks. 
-
-## Proposed Interventions 
+## Main objectives
 
 - **Identification of vulnerability hotspots across the TEN-T Corridor**
 - **Economic analysis of windstorm and flood impacts on transport infrastructure**
