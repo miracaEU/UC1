@@ -1,0 +1,17 @@
+name: miraca_template
+channels:
+  - conda-forge
+dependencies:
+  - python>=3.11
+  - shapely>=2.0
+  - geopandas
+  - jupyter
+  - rasterio
+  - xarray
+  - pytest
+  - black
+  - ruff
+  - ipykernel
+  - pip:
+      - "-e ."
+      - git+https://github.com/miracaEU/miraca-book.git

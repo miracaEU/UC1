@@ -1,0 +1,26 @@
+name: Pytest Miraca
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  pytest:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: mamba-org/setup-micromamba@v1
+        with:
+          environment-file: environment.yaml
+          cache-environment: true
+      - name: Format
+        run: |
+          micromamba run -n miraca black --check src tests
+      - name: Lint
+        run: |
+          micromamba run -n miraca  ruff check src tests
+      - name: Run pytest
+        run: |
+          micromamba run -n miraca pytest tests
