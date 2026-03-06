@@ -1,3 +1,5 @@
+inputs/climate_hazards/**/RP100.tif
+inputs/**/*.tif
+inputs/**/*.parquet
+**/__pycache__/
 **/*.pyc
-outputs/
-**/*.egg-info
