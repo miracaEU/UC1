@@ -480,11 +480,13 @@ def format_log_colorbar(colorbar, axis='y'):
     
     ax = colorbar.ax
     tick_locs = ax.get_yticks() if axis == 'y' else ax.get_xticks()
-    superscripts = str.maketrans("0123456789", "⁰¹²³⁴⁵⁶⁷⁸⁹")
-    labels = [f'10{str(int(val)).translate(superscripts)}' if not np.isnan(val) else '' 
+    superscripts = str.maketrans("0123456789-", "⁰¹²³⁴⁵⁶⁷⁸⁹⁻")
+    labels = [f'10{str(int(val)).translate(superscripts)}' if not np.isnan(val) else ''
               for val in tick_locs]
-    
+
     if axis == 'y':
+        ax.set_yticks(tick_locs)
         ax.set_yticklabels(labels)
     else:
+        ax.set_xticks(tick_locs)
         ax.set_xticklabels(labels)
